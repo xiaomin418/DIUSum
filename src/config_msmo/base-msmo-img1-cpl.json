@@ -1,0 +1,42 @@
+{
+    "bert_model": "/home/xxx/xxx/pretrained_model/.pytorch_pretrained_bert/bert-base-uncased",
+    "GPU_index": "4",
+    "train_batch_size": 24,
+    "num_train_epochs": 40,
+    "print_every":1000,
+    "output_dir": "/data-xxx/xxx/IGMS_checkpoints",
+    "learning_rate": 1e-4,
+    "warmup_proportion": 0.1,
+    "gradient_accumulation_steps": 1,
+
+    "trunc_norm_init_std":1e-4,
+    "tk_dim":49,
+    "image_hidden_dim": 768,
+    "img_len":1,
+    "len_sum":3,
+
+    "max_src_len": 300,
+    "max_tgt_len":120,
+    "IMG_SIZE":224,
+    "img_global_dim": 4096,
+
+    "data_dir": "/data-xxx/data/xxx/dataset/MSMO_Finished/",
+    "img_dir": "/data-mei/xxx/MSMO_new/",
+    "keyids_dir": "/data-xxx/data/xxx/dataset/MSMO_Finished/text_compress_feat/",
+    "val_ex_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/exID_bert_valid.pickle",
+    "val_txt2img_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/new_txt2img_valid.pkl",
+    "train_ex_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/exID_bert_train.pickle",
+    "train_txt2img_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/new_txt2img_train.pkl",
+    "test_ex_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/exID_bert_test.pickle",
+    "test_txt2img_path": "/data-xxx/data/xxx/dataset/MSMO_Finished/new_txt2img_test.pkl",
+
+    "result_path": "result",
+    "eval_path": "data/processed_data/eval.csv",
+    "config_path": "/data-xxx/xxx/IGMS_checkpoints/msmo_base_img1-2_cpl/config.json",
+    "model_path": "/data-xxx/xxx/IGMS_checkpoints/msmo_base_img1-2_cpl/BertAbsSumx.bin",
+
+    "mode": "imgtxt-sum",
+    "fusion_method": "concat",
+    "img_loss_w": 0.5,
+    "with_comma": false
+}

@@ -1,0 +1,52 @@
+{
+    "data_dir": "data/processed_data",
+    "bert_model": "/home/xxx/xxx/pretrained_model/.pytorch_pretrained_bert/bert-base-uncased",
+    "GPU_index": "0",
+    "train_batch_size": 60,
+    "num_train_epochs": 20,
+    "print_every":1000,
+    "output_dir": "/data-xxx/xxx/base_textonly",
+    "learning_rate": 1e-4,
+    "warmup_proportion": 0.1,
+    "gradient_accumulation_steps": 1,
+
+    "trunc_norm_init_std":1e-4,
+    "tk_dim":49,
+    "image_hidden_dim": 768,
+    "img_len":3,
+    "len_sum":3,
+
+    "max_src_len": 60,
+    "max_tgt_len":20,
+    "IMG_SIZE":224,
+    "img_global_dim": 4096,
+    "ext_dir": "/data1/xxx/dataset/ILSVRC2012/",
+    "target_feat_dir": "/data-xxx/data/xxx/dataset/MMS_extend/text_compress_feat2",
+
+    "train_source":"/data-xxx/data/xxx/dataset/MMS/corpus/train_sent.txt",
+    "train_target":"/data-xxx/data/xxx/dataset/MMS/corpus/train_title.txt",
+    "train_img_dir":"/data-xxx/data/xxx/dataset/MMS/corpus/images_train",
+    "train_ext_ex_file":"/data-xxx/data/xxx/dataset/MMS_extend/train_imageNet.pkl",
+
+    "dev_source":"/data-xxx/data/xxx/dataset/MMS/corpus/dev_sent.txt",
+    "dev_target":"/data-xxx/data/xxx/dataset/MMS/corpus/dev_title.txt",
+    "dev_img_dir":"/data-xxx/data/xxx/dataset/MMS/corpus/images_dev",
+    "dev_ext_ex_file":"/data-xxx/data/xxx/dataset/MMS_extend/dev_imageNet.pkl",
+
+    "test_source":"/data-xxx/data/xxx/dataset/MMS/corpus/test_sent.txt",
+    "test_target":"/data-xxx/data/xxx/dataset/MMS/corpus/test_title.txt",
+    "test_img_dir":"/data-xxx/data/xxx/dataset/MMS/corpus/images_test",
+    "test_ext_ex_file":"/data-xxx/data/xxx/dataset/MMS_extend/test_imageNet.pkl",
+    "merge_guidance_dir":"/data-xxx/data/xxx/dataset/MMS/corpus/merge_guidance",
+
+    "result_path": "result",
+    "eval_path": "data/processed_data/eval.csv",
+    "config_path": "/data-xxx/xxx/IGMS_checkpoints/base_textonly/config.json",
+    "model_path": "/data-xxx/xxx/IGMS_checkpoints/base_textonly/BertAbsSum_19.bin",
+
+    "mode": "txt-sum",
+    "fusion_method": "textonly",
+    "guide": "no_guide",
+    "encoder_init": "None",
+    "crfer_init": "None"
+}
